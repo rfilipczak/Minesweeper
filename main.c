@@ -2,6 +2,8 @@
 #include "SDL.h"
 
 #include "game.h"
+#include "rendering.h"
+
 
 int main(int argc, char *argv[]) {
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
@@ -37,7 +39,7 @@ int main(int argc, char *argv[]) {
 
 
     game_t game = {
-            .status = RUNNING,
+            .state = RUNNING,
             .board = {
                     EMPTY
             }
@@ -45,6 +47,33 @@ int main(int argc, char *argv[]) {
 
 
 
+    SDL_Event event;
+    while(game.state != QUIT)
+    {
+        while(SDL_PollEvent(&event))
+        {
+            switch (event.type) {
+                case SDL_QUIT:
+                    game.state = QUIT;
+                    break;
+            }
+        }
+
+        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_RenderClear(renderer);
+
+        render_game(renderer, &game);
+
+        SDL_RenderPresent(renderer);
+    }
+
+
+
+
+
+
+    SDL_DestroyWindow(window);
+    SDL_DestroyRenderer(renderer);
     SDL_Quit();
     printf("Done.\n");
 

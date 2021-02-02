@@ -93,12 +93,12 @@ clean: CMakeFiles/Minesweeper.dir/clean
 CMakeFiles/Minesweeper.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" --progress-num=1,2 "Built target Minesweeper"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" --progress-num=1,2,3 "Built target Minesweeper"
 .PHONY : CMakeFiles/Minesweeper.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Minesweeper.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/Minesweeper.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" 0
 .PHONY : CMakeFiles/Minesweeper.dir/rule

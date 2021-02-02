@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Minesweeper.dir/main.c.obj"
+  "CMakeFiles/Minesweeper.dir/rendering.c.obj"
   "Minesweeper.exe"
   "Minesweeper.exe.manifest"
   "Minesweeper.pdb"

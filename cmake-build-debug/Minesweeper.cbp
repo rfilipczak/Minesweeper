@@ -82,6 +82,12 @@
 		<Unit filename="C:/Edu/I rok/Podstawy programowania I/Minesweeper/main.c">
 			<Option target="Minesweeper"/>
 		</Unit>
+		<Unit filename="C:/Edu/I rok/Podstawy programowania I/Minesweeper/rendering.c">
+			<Option target="Minesweeper"/>
+		</Unit>
+		<Unit filename="C:/Edu/I rok/Podstawy programowania I/Minesweeper/rendering.h">
+			<Option target="Minesweeper"/>
+		</Unit>
 		<Unit filename="C:/Edu/I rok/Podstawy programowania I/Minesweeper/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

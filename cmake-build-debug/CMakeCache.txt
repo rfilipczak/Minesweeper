@@ -390,5 +390,5 @@ CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 FIND_PACKAGE_MESSAGE_DETAILS_SDL2:INTERNAL=[mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;C:/MinGW/mingw64/lib/libSDL2.dll.a;-lpthread][C:/MinGW/mingw64/include/SDL2][v()]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
-SDL2_LIBRARY_TEMP:INTERNAL=mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;C:/MinGW/mingw64/lib/libSDL2.dll.a;-lpthread;-lpthread;-lpthread
+SDL2_LIBRARY_TEMP:INTERNAL=mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;mingw32;C:/MinGW/mingw64/lib/libSDL2main.a;C:/MinGW/mingw64/lib/libSDL2.dll.a;-lpthread;-lpthread;-lpthread;-lpthread
 

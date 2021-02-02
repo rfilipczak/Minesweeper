@@ -5,6 +5,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "C:/Edu/I rok/Podstawy programowania I/Minesweeper/main.c" "C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/Minesweeper.dir/main.c.obj"
+  "C:/Edu/I rok/Podstawy programowania I/Minesweeper/rendering.c" "C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/Minesweeper.dir/rendering.c.obj"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 

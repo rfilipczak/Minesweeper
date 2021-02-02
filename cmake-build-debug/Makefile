@@ -169,6 +169,33 @@ main.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/main.c.s
 .PHONY : main.c.s
 
+rendering.obj: rendering.c.obj
+
+.PHONY : rendering.obj
+
+# target to build an object file
+rendering.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.obj
+.PHONY : rendering.c.obj
+
+rendering.i: rendering.c.i
+
+.PHONY : rendering.i
+
+# target to preprocess a source file
+rendering.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.i
+.PHONY : rendering.c.i
+
+rendering.s: rendering.c.s
+
+.PHONY : rendering.s
+
+# target to generate assembly for a file
+rendering.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.s
+.PHONY : rendering.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -181,6 +208,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... rendering.obj
+	@echo ... rendering.i
+	@echo ... rendering.s
 .PHONY : help
 
 
