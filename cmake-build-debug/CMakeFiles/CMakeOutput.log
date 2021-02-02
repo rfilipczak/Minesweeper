@@ -253,3 +253,35 @@ Parsed C implicit link information from above output:
   implicit fwks: []
 
 
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/mingw64/bin/mingw32-make.exe cmTC_2d474/fast && C:/MinGW/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_2d474.dir\build.make CMakeFiles/cmTC_2d474.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2d474.dir/CheckIncludeFile.c.obj
+C:\MinGW\mingw64\bin\gcc.exe   -std=gnu11 -o CMakeFiles\cmTC_2d474.dir\CheckIncludeFile.c.obj   -c "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles\CMakeTmp\CheckIncludeFile.c"
+Linking C executable cmTC_2d474.exe
+"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_2d474.dir\link.txt --verbose=1
+"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_2d474.dir/objects.a
+C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\cmTC_2d474.dir/objects.a @CMakeFiles\cmTC_2d474.dir\objects1.rsp
+C:\MinGW\mingw64\bin\gcc.exe      -Wl,--whole-archive CMakeFiles\cmTC_2d474.dir/objects.a -Wl,--no-whole-archive  -o cmTC_2d474.exe -Wl,--out-implib,libcmTC_2d474.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_2d474.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):C:/MinGW/mingw64/bin/mingw32-make.exe cmTC_955cd/fast && C:/MinGW/mingw64/bin/mingw32-make.exe  -f CMakeFiles\cmTC_955cd.dir\build.make CMakeFiles/cmTC_955cd.dir/build
+mingw32-make.exe[1]: Entering directory 'C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_955cd.dir/CheckFunctionExists.c.obj
+C:\MinGW\mingw64\bin\gcc.exe   -DCHECK_FUNCTION_EXISTS=pthread_create   -std=gnu11 -o CMakeFiles\cmTC_955cd.dir\CheckFunctionExists.c.obj   -c "C:\IDEs\CLion 2020.2.4\bin\cmake\win\share\cmake-3.17\Modules\CheckFunctionExists.c"
+Linking C executable cmTC_955cd.exe
+"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E cmake_link_script CMakeFiles\cmTC_955cd.dir\link.txt --verbose=1
+"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f CMakeFiles\cmTC_955cd.dir/objects.a
+C:\MinGW\mingw64\bin\ar.exe cr CMakeFiles\cmTC_955cd.dir/objects.a @CMakeFiles\cmTC_955cd.dir\objects1.rsp
+C:\MinGW\mingw64\bin\gcc.exe  -DCHECK_FUNCTION_EXISTS=pthread_create    -Wl,--whole-archive CMakeFiles\cmTC_955cd.dir/objects.a -Wl,--no-whole-archive  -o cmTC_955cd.exe -Wl,--out-implib,libcmTC_955cd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\cmTC_955cd.dir\linklibs.rsp
+mingw32-make.exe[1]: Leaving directory 'C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/CMakeTmp'
+
+
+

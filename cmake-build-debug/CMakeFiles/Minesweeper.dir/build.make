@@ -77,6 +77,7 @@ include CMakeFiles/Minesweeper.dir/progress.make
 include CMakeFiles/Minesweeper.dir/flags.make
 
 CMakeFiles/Minesweeper.dir/main.c.obj: CMakeFiles/Minesweeper.dir/flags.make
+CMakeFiles/Minesweeper.dir/main.c.obj: CMakeFiles/Minesweeper.dir/includes_C.rsp
 CMakeFiles/Minesweeper.dir/main.c.obj: ../main.c
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/Minesweeper.dir/main.c.obj"
 	C:\MinGW\mingw64\bin\gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles\Minesweeper.dir\main.c.obj   -c "C:\Edu\I rok\Podstawy programowania I\Minesweeper\main.c"
