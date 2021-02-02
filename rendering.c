@@ -12,9 +12,9 @@
 void render_contour(SDL_Renderer *renderer, const game_t *game)
 {
 
-    SDL_Surface *image = SDL_LoadBMP("empty_board_beginner.bmp");
-    SDL_Texture *texture = SDL_CreateTextureFromSurface(renderer, image);
-    SDL_RenderCopy(renderer, texture, NULL, NULL);
+    SDL_Surface *empty_board_beginner = SDL_LoadBMP("empty_board_beginner.bmp");
+    SDL_Texture *empty_board_beginner_texture = SDL_CreateTextureFromSurface(renderer, empty_board_beginner); // WILL IT LEAK?
+    SDL_RenderCopy(renderer, empty_board_beginner_texture, NULL, NULL);
 }
 
 void render_running_state(SDL_Renderer *renderer, const game_t *game)
