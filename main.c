@@ -6,6 +6,7 @@
 
 
 int main(int argc, char *argv[]) {
+
     if (SDL_Init(SDL_INIT_VIDEO) != 0) {
         fprintf(stderr, "Could not initialize SDL: %s\n", SDL_GetError());
         return EXIT_FAILURE;
@@ -26,6 +27,7 @@ int main(int argc, char *argv[]) {
     }
     printf("Successfully created window.\n");
 
+
     SDL_Renderer *renderer = NULL;
     renderer = SDL_CreateRenderer(window, -1,
                                   SDL_RENDERER_ACCELERATED | SDL_RENDERER_TARGETTEXTURE);
@@ -45,7 +47,6 @@ int main(int argc, char *argv[]) {
                     EMPTY
             }
     };
-
 
 
     SDL_Event event;
