@@ -9,12 +9,24 @@
 #include "game.h"
 #include "rendering.h"
 
+#define CONTOUR_BEGINNER_WIDTH 152
+#define CONTOUR_BEGINNER_HEIGHT 195
+
 void render_contour(SDL_Renderer *renderer, const game_t *game)
 {
+    SDL_Surface *empty_board_beginner = NULL;
+    switch (game->difficulty) {
+        case BEGINNER:
+            empty_board_beginner = SDL_LoadBMP("empty_board_beginner.bmp");
+            SDL_Texture *empty_board_beginner_texture = SDL_CreateTextureFromSurface(renderer, empty_board_beginner); // WILL IT LEAK?
+            SDL_Rect dstrect = { WINDOW_WIDTH / 2 - CONTOUR_BEGINNER_WIDTH / 2 - 5,
+                                 WINDOW_HEIGHT / 2 - CONTOUR_BEGINNER_HEIGHT / 2, CONTOUR_BEGINNER_WIDTH, CONTOUR_BEGINNER_HEIGHT };
+            SDL_RenderCopy(renderer, empty_board_beginner_texture, NULL, &dstrect);
+            break;
 
-    SDL_Surface *empty_board_beginner = SDL_LoadBMP("empty_board_beginner.bmp");
-    SDL_Texture *empty_board_beginner_texture = SDL_CreateTextureFromSurface(renderer, empty_board_beginner); // WILL IT LEAK?
-    SDL_RenderCopy(renderer, empty_board_beginner_texture, NULL, NULL);
+        default: {}
+    }
+
 }
 
 void render_running_state(SDL_Renderer *renderer, const game_t *game)

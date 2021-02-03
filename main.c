@@ -17,7 +17,7 @@ int main(int argc, char *argv[]) {
     window = SDL_CreateWindow("Minesweeper Clone",
                      SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED,
                      WINDOW_WIDTH, WINDOW_HEIGHT,
-                     0
+                     SDL_WINDOW_SHOWN
     );
     if (window == NULL) {
         fprintf(stderr, "Could not create window: %s\n", SDL_GetError());
@@ -60,7 +60,7 @@ int main(int argc, char *argv[]) {
             }
         }
 
-        SDL_SetRenderDrawColor(renderer, 0, 0, 0, 255);
+        SDL_SetRenderDrawColor(renderer, 30, 54, 40, 255);
         SDL_RenderClear(renderer);
 
         render_game(renderer, &game);
