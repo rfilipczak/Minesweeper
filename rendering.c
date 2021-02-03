@@ -34,7 +34,7 @@ void render_contour(SDL_Renderer *renderer, const game_t *game)
 
 void render_running_state(SDL_Renderer *renderer, const game_t *game)
 {
-    //render_contour(renderer, game);
+    render_contour(renderer, game);
     // render_board(renderer, game);
 }
 
