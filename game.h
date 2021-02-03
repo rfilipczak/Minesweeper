@@ -12,10 +12,12 @@
 
 typedef enum {QUIT, RUNNING} state_t;
 typedef enum {EMPTY} entity_t;
+typedef enum {BEGINNER} difficulty_t;
 
 
 typedef struct {
     state_t state;
+    difficulty_t difficulty;
     int board[BOARD_SIZE * BOARD_SIZE];
 } game_t;
 

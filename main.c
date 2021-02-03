@@ -40,6 +40,7 @@ int main(int argc, char *argv[]) {
 
     game_t game = {
             .state = RUNNING,
+            .difficulty = BEGINNER,
             .board = {
                     EMPTY
             }
