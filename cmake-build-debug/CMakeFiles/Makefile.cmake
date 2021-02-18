@@ -55,5 +55,5 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/Minesweeper.dir/DependInfo.cmake"
+  "CMakeFiles/Minesweeper_old.dir/DependInfo.cmake"
   )

@@ -67,24 +67,13 @@ RM = "C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "C:\Edu\I rok\Podstawy programowania I\Minesweeper"
+CMAKE_SOURCE_DIR = "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug"
+CMAKE_BINARY_DIR = "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old\cmake-build-debug"
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
 
 # Special rule for the target edit_cache
 edit_cache:
@@ -97,11 +86,22 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" --regenerate-during-build -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
+
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles\progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old\cmake-build-debug\CMakeFiles" "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old\cmake-build-debug\CMakeFiles\progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\Podstawy programowania I\Minesweeper\cmake-build-debug\CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old\cmake-build-debug\CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named Minesweeper
+# Target rules for targets named Minesweeper_old
 
 # Build rule for target.
-Minesweeper: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Minesweeper
-.PHONY : Minesweeper
+Minesweeper_old: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 Minesweeper_old
+.PHONY : Minesweeper_old
 
 # fast build rule for target.
-Minesweeper/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/build
-.PHONY : Minesweeper/fast
+Minesweeper_old/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/build
+.PHONY : Minesweeper_old/fast
 
 main.obj: main.c.obj
 
@@ -148,7 +148,7 @@ main.obj: main.c.obj
 
 # target to build an object file
 main.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/main.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/main.c.obj
 .PHONY : main.c.obj
 
 main.i: main.c.i
@@ -157,7 +157,7 @@ main.i: main.c.i
 
 # target to preprocess a source file
 main.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/main.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/main.c.i
 .PHONY : main.c.i
 
 main.s: main.c.s
@@ -166,7 +166,7 @@ main.s: main.c.s
 
 # target to generate assembly for a file
 main.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/main.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/main.c.s
 .PHONY : main.c.s
 
 rendering.obj: rendering.c.obj
@@ -175,7 +175,7 @@ rendering.obj: rendering.c.obj
 
 # target to build an object file
 rendering.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/rendering.c.obj
 .PHONY : rendering.c.obj
 
 rendering.i: rendering.c.i
@@ -184,7 +184,7 @@ rendering.i: rendering.c.i
 
 # target to preprocess a source file
 rendering.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/rendering.c.i
 .PHONY : rendering.c.i
 
 rendering.s: rendering.c.s
@@ -193,7 +193,7 @@ rendering.s: rendering.c.s
 
 # target to generate assembly for a file
 rendering.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper.dir\build.make CMakeFiles/Minesweeper.dir/rendering.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Minesweeper_old.dir\build.make CMakeFiles/Minesweeper_old.dir/rendering.c.s
 .PHONY : rendering.c.s
 
 # Help Target
@@ -204,7 +204,7 @@ help:
 	@echo ... depend
 	@echo ... edit_cache
 	@echo ... rebuild_cache
-	@echo ... Minesweeper
+	@echo ... Minesweeper_old
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s

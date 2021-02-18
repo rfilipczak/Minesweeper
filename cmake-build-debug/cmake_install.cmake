@@ -1,4 +1,4 @@
-# Install script for directory: C:/Edu/I rok/Podstawy programowania I/Minesweeper
+# Install script for directory: C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

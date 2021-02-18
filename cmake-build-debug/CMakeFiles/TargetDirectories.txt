@@ -1,3 +1,3 @@
-C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/Minesweeper.dir
-C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old/cmake-build-debug/CMakeFiles/Minesweeper_old.dir
+C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old/cmake-build-debug/CMakeFiles/rebuild_cache.dir

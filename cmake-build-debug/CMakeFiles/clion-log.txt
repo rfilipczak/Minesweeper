@@ -1,4 +1,4 @@
-"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Edu\I rok\Podstawy programowania I\Minesweeper"
+"C:\IDEs\CLion 2020.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" "C:\Edu\I rok\I sem\Podstawy programowania I\Minesweeper_old"
 -- Configuring done
 -- Generating done
--- Build files have been written to: C:/Edu/I rok/Podstawy programowania I/Minesweeper/cmake-build-debug
+-- Build files have been written to: C:/Edu/I rok/I sem/Podstawy programowania I/Minesweeper_old/cmake-build-debug
